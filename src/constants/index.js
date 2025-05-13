@@ -157,21 +157,16 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "Pandas",
-        path: "/assets/logos/Pandas.svg",
-      },
-      {
-        id: 4,
         name: "Html5",
         path: "/assets/logos/html5.svg",
       },
       {
-        id: 5,
+        id: 4,
         name: "CSS3",
         path: "/assets/logos/css3.svg",
       },
       {
-        id: 6,
+        id: 5,
         name: "Javascript",
         path: "/assets/logos/javascript.svg",
       }
