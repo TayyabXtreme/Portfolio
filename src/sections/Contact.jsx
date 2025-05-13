@@ -30,8 +30,8 @@ const Contact = () => {
     try {
       console.log("From submitted:", formData);
       await emailjs.send(
-        "service_79b0nyj",
-        "template_17us8im",
+        "service_ykael26",
+        "template_yqi4wc1",
         {
           from_name: formData.name,
           to_name: "Muhammad Tayyab",
@@ -39,7 +39,7 @@ const Contact = () => {
           to_email: "tayyabxtrem@gmail.com",
           message: formData.message,
         },
-        "pn-Bw_mS1_QQdofuV"
+        "-zTK-MOBgd4ottqt0"
       );
       setIsLoading(false);
       setFormData({ name: "", email: "", message: "" });
