@@ -38,7 +38,7 @@ const words = ["Secure", "Modern", "Scalable", "Intelligent", "Responsive", "Eff
           >
             <FlipWords
               words={words}
-              className="font-black text-white text-8xl"
+              className="font-black text-white sm:text-4xl md:text-8xl"
             />
           </motion.div>
           <motion.p

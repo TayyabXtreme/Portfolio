@@ -48,7 +48,7 @@ export const FlipWords = ({ words, duration = 3000, className }) => {
           scale: 2,
           position: "absolute",
         }}
-        className={twMerge("z-10 inline-block relative text-left", className)}
+        className={twMerge("z-10 inline-block relative sm:text-4xl text-left", className)}
         key={currentWord}
       >
         {/* edit suggested by Sajal: https://x.com/DewanganSajal */}

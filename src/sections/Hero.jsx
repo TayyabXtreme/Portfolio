@@ -1,8 +1,7 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
-
 import { Astronaut } from "../components/Astronaut";
-import { Float } from "@react-three/drei";
+import { Float, Environment, OrbitControls } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
 import { Suspense } from "react";
@@ -19,15 +18,36 @@ const Hero = () => {
         className="absolute inset-0"
         style={{ width: "100vw", height: "100vh" }}
       >
-        <Canvas camera={{ position: [0, 1, 3] }}>
+        <Canvas camera={{ position: [0, 1, 3] }} shadows>
           <Suspense fallback={<Loader />}>
+            {/* Add lighting for proper model visualization */}
+            <ambientLight intensity={0.5} />
+            <spotLight 
+              position={[10, 10, 10]} 
+              angle={0.15} 
+              penumbra={1} 
+              intensity={1} 
+              castShadow 
+            />
+            <directionalLight 
+              position={[-10, -10, -5]} 
+              intensity={0.5} 
+            />
+            
+            {/* Optional: Add environment for better lighting */}
+            <Environment preset="city" />
+            
             <Float>
               <Astronaut
-                scale={isMobile && 0.23}
-                position={isMobile && [0, -1.5, 0]}
+                scale={isMobile ? 0.3 : 0.5}
+                position={isMobile ? [0, -1.5, 0] : [1.3, -1, 0]}
               />
             </Float>
+            
             <Rig />
+            
+            {/* Optional: Add orbit controls for debugging */}
+            {/* <OrbitControls /> */}
           </Suspense>
         </Canvas>
       </figure>
