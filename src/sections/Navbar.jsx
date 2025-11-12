@@ -89,7 +89,7 @@ const Navbar = () => {
            <embed
   src="/cv.pdf"
   type="application/pdf"
-  className="w-full h-[70vh]"
+  className="w-full h-[80vh]"
 />
 
           </div>

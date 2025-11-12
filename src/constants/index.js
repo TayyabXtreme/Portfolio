@@ -1,6 +1,82 @@
 export const myProjects = [
   {
-    id: 1,
+  id: 1,
+  title: "MUET FM 92.6",
+  description:
+    "MUET FM 92.6 is the official radio station of Mehran University of Engineering & Technology, broadcasting quality content since its inception. This web app serves as the digital platform for MUET FM, providing details about programs, events, news, and much more.",
+  subDescription: [
+    "Built with Next.js 13+ (App Router) and React, styled using Tailwind CSS for a clean, responsive UI.",
+    "Integrated Supabase for database management and authentication, ensuring secure and efficient data handling.",
+    "Framer Motion used for smooth and interactive animations across the site.",
+    "Deployed on Vercel for frontend and Cloudflare Workers for serverless backend functions.",
+    "Includes an Admin Dashboard for managing programs, events, and team content."
+  ],
+  href: "https://muet-fm.vercel.app/social",
+  logo: "",
+  image: "/assets/projects/muetFM.png",
+  tags: [
+    {
+      id: 1,
+      name: "Next.js",
+      path: "/assets/logos/Next.js.svg",
+    },
+    {
+      id: 2,
+      name: "React",
+      path: "/assets/logos/react.svg",
+    },
+    {
+      id: 3,
+      name: "Tailwind CSS",
+      path: "/assets/logos/tailwindcss.svg",
+    }
+  ],
+}
+
+
+,
+{
+  id: 2,
+  title: "HealthMate",
+  description:
+    "HealthMate is an AI-powered health assistant that analyzes medical reports and provides easy-to-understand bilingual summaries (English + Roman Urdu). It helps users manage their health data, track vitals, and organize medical reports securely.",
+  subDescription: [
+    "AI Report Analysis using Google Gemini 2.5 Flash for instant insights from PDFs and images.",
+    "Bilingual Summaries in English and Roman Urdu for easy understanding.",
+    "Secure authentication powered by Clerk (Email, Google, Apple).",
+    "Health Dashboard to monitor vitals like BP, Sugar, BMI, and Heart Rate.",
+    "Modern dark-mode glassmorphic UI, fully responsive on all devices.",
+  ],
+  href: "https://healthmate-snowy.vercel.app/",
+  logo: "",
+  image: "/assets/projects/healthmate.png",
+  tags: [
+    {
+      id: 1,
+      name: "Next.js",
+      path: "/assets/logos/Next.js.svg",
+    },
+    {
+      id: 3,
+      name: "Tailwind CSS",
+      path: "/assets/logos/tailwindcss.svg",
+    },  
+    {
+      id: 5,
+      name: "Supabase",
+      path: "/assets/logos/supabase.svg",
+    },
+    {
+      id: 7,
+      name: "Google Gemini",
+      path: "/assets/logos/google-gemini-logo.svg",
+    }
+  ],
+  live: "https://healthmate-snowy.vercel.app/",
+},
+
+  {
+    id: 3,
     title: "Muet Food",
     description:
       "This project is a responsive and dynamic food ordering website developed for MUET. The platform allows students and staff to browse available food items, place orders, and track their status in real-time",
@@ -36,7 +112,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: "Instagram Clone",
     description:
       "A full-featured Instagram clone built using React, Firebase, Chakra UI, and Zustand. The application includes core social features such as posting, profile management, real-time chat, and responsive UI, all powered by Firebase's backend services.",
@@ -77,7 +153,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: "Dua General Store",
     description:
       "A fully responsive e-commerce website built with Next.js and Supabase, featuring user authentication, product listings, blogging, and a complete admin dashboard.",
@@ -109,7 +185,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Edu Track",
     description:
       "Student Data Management: Admins can easily manage student details and academic records",
@@ -128,48 +204,6 @@ export const myProjects = [
         path: "/assets/logos/Java.svg",
       }
       
-    ],
-  },
-  {
-    id: 5,
-    title: "Medical Recommendation System",
-    description:
-      "The Medical Recommendation System is a Flask-based AI web app that serves as a virtual health assistant. Users input their symptoms, and the system predicts the likely disease while also recommending appropriate medications, diets, workouts, and precautions. By integrating a machine learning model trained on medical datasets, it provides a preliminary diagnosis and basic treatment suggestions. This system is especially useful in areas with limited healthcare access, helping bridge the gap between patients and professional medical support.",
-    subDescription: [
-      "Quickly interprets user-inputted symptoms using trained machine learning models.",
-      "Provides customized medicine, diet, workout, and precaution recommendations.",
-      "User-friendly UI with searchable, clickable symptom tags and instant feedback.",
-      "Aids in early diagnosis, especially in areas lacking medical professionals.",
-    ],
-    href: "https://github.com/TayyabXtreme/AI_Project_Medecine_Recommendation_System",
-    logo: "",
-    image: "/assets/projects/muetFood.png",
-    tags: [
-      {
-        id: 1,
-        name: "Scikit Learn",
-        path: "/assets/logos/scikit-learn.svg",
-      },
-      {
-        id: 2,
-        name: "Flask",
-        path: "/assets/logos/Flask.svg",
-      },
-      {
-        id: 3,
-        name: "Html5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 4,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 5,
-        name: "Javascript",
-        path: "/assets/logos/javascript.svg",
-      }
     ],
   }
 ];
@@ -193,6 +227,18 @@ export const mySocials = [
 ];
 
 export const experiences = [
+  {
+    title: "Web Development Intern",
+    job: "MUET FM 92.6",
+    date: "June – July 2025",
+    contents: [
+      "Developed and deployed the official full-stack website for MUET FM 92.6, enhancing the digital presence of Mehran University’s radio station.",
+      "Worked on both frontend and backend — from UI/UX design to Supabase database integration and user authentication.",
+      "Built a dynamic content management system with admin dashboard for managing programs, events, and radio team profiles.",
+      "Optimized website performance for faster load times and smoother user interaction using Next.js and Framer Motion.",
+      "Deployed and tested the live site on Vercel with Cloudflare Workers for serverless functions and real-time content delivery.",
+    ],
+  },
   {
   title: "Full-Stack Web Developer",
   job: "Dua General Store (Freelance Project)",
