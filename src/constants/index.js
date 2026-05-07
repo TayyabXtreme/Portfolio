@@ -228,6 +228,18 @@ export const mySocials = [
 
 export const experiences = [
   {
+  title: "Chief Technology Officer (CTO)",
+  job: "FITRO – AI-Powered Fitness App",
+  date: "2025-Present",
+  contents: [
+    "Led the technical development of FITRO, an AI-powered fitness application designed to simplify calorie tracking and personalized fitness guidance.",
+    "Built a computer vision-based food recognition system capable of estimating calories from meal images in real time.",
+    "Integrated LLM-powered fitness assistance to provide personalized diet and workout recommendations for users.",
+    "Designed and managed the app’s scalable API-first architecture, ensuring affordability, performance, and cross-device compatibility.",
+    "Collaborated with the startup team on product strategy, UI/UX improvements, and deployment workflows during NIC Hyderabad Cohort 7.",
+  ],
+},
+  {
     title: "Web Development Intern",
     job: "MUET FM 92.6",
     date: "June – July 2025",

@@ -15,7 +15,7 @@ const Footer = () => {
           </a>
         ))}
       </div>
-      <p>© 2025 Muhammad Tayyab. All rights reserved.</p>
+      <p>© 2026 Muhammad Tayyab. All rights reserved.</p>
     </section>
   );
 };

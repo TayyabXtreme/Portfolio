@@ -30,7 +30,7 @@ const Contact = () => {
     try {
       console.log("From submitted:", formData);
       await emailjs.send(
-        "service_ykael26",
+        "service_xu4ckdo",
         "template_yqi4wc1",
         {
           from_name: formData.name,
